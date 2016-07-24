@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input{
+			background-color: lightblue;
+			border-radius: 2px;
+			border-color: green;
+		}
+	</style>
+</head>
+<body>
+<input type="button" value="like" id="b" onclick="func(this);">
+<p id="b"></p>
+<script type="text/javascript">
+function func(a)
+{
+	if(a.value=="like")
+	{
+		a.value="unlike";
+	}
+	else
+	{
+		a.value="like";
+	}
+	//console.log("ridiculous");
+	document.getElementById("b").innerHTML=a;
+}
+</script>
+</body>
+</html>
