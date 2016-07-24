@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input{
+			border-radius: 5px;
+			border-color: green;
+		}
+	</style>
+	<script type="text/javascript">
+function func()
+{
+	var a=document.getElementById("button");
+	if(a.value=="like")
+	{
+		a.value="unlike";
+		a.style.backgroundColor = "#009900";
+	}
+	else
+	{
+		a.value="like";
+		a.style.backgroundColor = "#66B2FF";
+	}
+	document.getElementById("button").innerHTML=a;
+}
+</script>
+
+</head>
+<body>
+<input type="button" id="button" value = "like" style= "background-color:#66B2FF" onclick="func()";/>
+<p id="b"></p>
+</body>
+</html>
