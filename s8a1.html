@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#a{
+		background-color: #DCE8F5;
+		color:#34495E;
+		width:930px;
+	}
+	#b{
+		color:red;
+		padding-left: 15px;
+	}
+	#c{
+		padding-left: 15px;
+		break-after: always;
+	}
+	.def
+	{
+		border-color: lightblue;
+		width: 300px;
+		padding-top: 10px;
+	}
+	.abc{
+		border-color: red;
+		width: 300px;
+		padding-top: 10px;
+	}
+	#d{
+		margin-left: 185px;
+		width: 120px;
+		height: 30px;
+		border-color: #34495E;
+	}
+	#x{
+		position: absolute;
+		left: 600px;
+		top: 30px;	
+	}
+	#e
+	{
+		background-color: #34495E;
+		position: absolute;
+		left: 500px;
+		top: 90px;
+		width: 350px;
+		height: 290px;
+		padding-left: 50px;
+	}
+	#h
+	{
+		color: white;
+		position: absolute;
+		width:90px;
+		height:30px;
+		left: 280px;
+		background-color: #34495E;
+		border-color: yellow;
+		border-width: 1px;
+	}
+	#i{
+		position: absolute;
+		left: 270px;
+		top: 200px;
+		color: white;
+		font-size: 15px;
+	}
+</style>
+	
+</head>
+<body>
+<div id="a">
+	<h1 id="a">Enter the system</h1>
+	<p style="color:grey;padding-left:10px;">It is necessary to login to your account to sign up for a course</p>
+	<h3 id="b">ARE YOU NEW? <span style="color:blue;">REGISTER</span></h3>
+	<form action="demo_form.asp" method="post" id="c">
+		<input type="text" name="Username" placeholder="Username" class="abc"><br><br>
+		<input type="text" name="Email" placeholder="Email" class="abc"><br><br>
+		<input type="text" name="Password" placeholder="Password" class="abc"><br><br>
+		<input type="text" name="Password" placeholder="ConfirmPassword" class="abc"><br><br>
+		<input type="submit" name="Register" value="Register" id="d">
+	</form>
+	<div id="e">
+	<h3 id="f" style="color:white;">ALREADY A STUDENT? LOGIN</h3>
+	<form action="demo_form.asp" method="post" id="g">
+		<input type="text" name="Username" placeholder="Username" class="def"><br><br>
+		<input type="text" name="Email" placeholder="Email" class="def"><br><br>
+		<input type="checkbox" name="remember" value="Remember me?"><span style="color:white;"> Remember me?</span>
+		<input type="submit" name="login" value="Login" id="h">
+	</form>
+	<a href="www.google.com" id="i">forgot password?</a>
+	</div>
+</div>
+
+</body>
+</html>
